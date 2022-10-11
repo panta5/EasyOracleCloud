@@ -17,7 +17,7 @@ sudo curl -o- https://raw.githubusercontent.com/panta5/EasyOracleCloud/main/star
 sudo chown -R root:root /var/www/html
 ```
 
-해주면 파일 정상적으로 이용할수있음
+해주면 파일 정상적으로 이용할수있음 (파일 소유권때문에 오류날수도 있어서 파일 집어넣을때마다 해주는게 좋음.)
 
 그리고, https 인증서를 3개월마다 갱신해줘야 하는데 한달에 한 번 정도
 
