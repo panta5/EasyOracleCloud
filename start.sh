@@ -14,6 +14,12 @@ sudo apt install nginx
 # Certbot 설치
 sudo snap install --classic certbot
 
+# 방화벽 목록 추가
+sudo iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT
+sudo iptables -I INPUT 1 -p tcp --dport 443 -j ACCEPT
+sudo netfilter-persistent save
+sudo netfilter-persistent reload
+
 # dhparam 생성
 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 
