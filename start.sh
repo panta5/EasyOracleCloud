@@ -10,6 +10,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Nginx 설치
 sudo apt install nginx
+sudo apt install ssl-cert
 
 # Certbot 설치
 sudo snap install --classic certbot
